@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Palindrome Check</title>
+    <script>
+  const isPalindrome = function(s){
+            const stringOnly= s.replace(/[^a-zA-Z0-9]/g,'').toLowerCase()
+            let start=0;
+            let end=stringOnly.length-1;
+            let result = true ;
+            while(end>start){
+                if(stringOnly[start]!==stringOnly[end]){
+                    result=false;
+                }
+                start++;
+                end--;
+        }
+        return result;
+        }
+        let arr="abba";
+        console.log(isPalindrome(arr));
+        let arrs="kimmy";
+        console.log(isPalindrome(arrs));
+    </script>
+</head>
+<body>
+    <h1>Check for Palindrome</h1>
+</body>
+</html>
