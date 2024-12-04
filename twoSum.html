@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>twoSum Data Structure</title>
+    <script>
+       var twoSum = function(num,target){
+            const map = new Map() ;
+            for(let i=0;i<num.length;i++){
+            let rem=target-num[i];
+            if (map.has(rem)){
+                return [map.get(rem),i]
+            } else
+            map.set(num[i],i);
+        }
+    return false;
+}
+        let num=[2,4,6,];
+        let target=8;
+        console.log(twoSum(num,target));  
+
+    /*    var twoSum = function(nums, target) {
+    const map = new Map();
+    for(let i=0;i<nums.length;i++){
+        let rem=target-nums[i];
+        if(map.has(rem)){
+            return[map.get(rem),i]
+        }
+        else 
+        map.set(nums[i] , i);
+    }
+  return false;  
+};
+let num=[3,5,7];
+let target=88;
+console.log(twoSum(num,target));   */
+    </script>
+</head>
+<body>
+    <h1>twoSum Problem</h1>
+    
+</body>
+</html>

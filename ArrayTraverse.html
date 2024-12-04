@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DS Practice</title>
+    <script>
+        const data=[20,10,30,40,50,60]
+        //let position = data.indexOf(30);
+        //console.log(position)
+        //recersed=data.toReversed;
+        //console.log(data)
+        //console.log(recersed)
+        function getElement () {
+            el=document.getElementById('element').value
+            if (el<data.length) {
+                alert(data[el])
+            } else {
+                alert("Please enter a valid input")
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">Get Element</button>
+    
+</body>
+</html>
